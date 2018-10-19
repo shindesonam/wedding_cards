@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<title>Wedding Website</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style>
+.mySlides {display:none;}
+
+.row
+{
+font-family:Arial Rounded MT Bold;
+color:#CFB53B;
+
+background-color:Black;
+}
+.nav{
+width:100%;
+background:none;
+height:70px;
+margin-top:0px;
+text-decoration:none;
+
+
+}
+
+ul
+{
+list-style:none;
+margin:0;
+position:absolute;
+}
+li
+{
+float:left;
+margin-top:15px;
+}
+a
+{
+width:200px;
+color:Black;
+display:block;
+text:decoration:none;
+font-size:20px;
+text-align:center;
+padding:10px;
+border-radius:10px;
+font-family:Century Gothic;
+font-weight:bold;
+}
+a:hover
+{
+background:gold;
+trasition:0.2s;
+
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+
+}
+
+
+div.gallery img {
+    width: 150%;
+    height: 150%;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: Black;
+    padding: 10px;
+    background:white;   
+    margin: 0;
+font-family:Century Gothic;
+font-weight:bold;
+font-size:20px;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+ font-size:15px;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+ text-decoration: none;
+
+}
+
+.dropdown-content a:hover {
+    background:gold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+</style>
+<body>
+
+
+<div class="nav">
+<ul>
+<li><a href="file:///C:/xampp/htdocs/Wedding/Home.html"><i class="fa fa-home"></i>
+Home</a></li>
+<li><a href="About.html"><i class="fa fa-user"></i>About</a></li>
+<li><a href="Designer.html"><i class="fa fa-star-o"></i>Card Designs</a></li>
+
+<li><a href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+
+<li><div class="dropdown">
+
+    <button class="dropbtn"><i class="fa fa-smile-o"></i>Order</button>
+    <div class="dropdown-content">
+      <a href="HINDU.html">Hindu Wedding Cards</a>
+      <a href="Muslim.html">Muslim Wedding Cards</a>
+      <a href="Special.html">Special Occasion Cards</a>
+      <a href="Designer.html">Designer Wedding Cards </a>
+    </div>
+  </div> 
+</li>
+
+<li><a href="insert.php?dropdown-content='1'"></i>Make Order</a></li>
+</ul>
+</div>
+
+
+
+
+<div class="row">
+  <div class="column" style="background-color:Black;">
+ <h5 ><i class="fa fa-phone"></i>02164-220022<i class="fa fa-envelope"></i>bhagyashreecards@gmail.com</h5>
+      </div>
+
+
+
+<div class="row">
+  <div class="column" style="background-color:Black;">
+    <h5 style="font-size:150%; text-align:Center"><marquee>BHAGYASHREE CARDS</marquee></h5>
+      </div>
+
+
+<div class="row">
+  <div class="column" style="background-color:Black;">
+    <h5 style="text-align:Center;">Register / Login</h5>
+      </div>
+
+
+
+
+
+<div class="w3-content w3-section" style="max-width:1300px" "max-height:1200px">
+  <img class="mySlides" src="a1.jpg" style="width:100%"  >
+  <img class="mySlides" src="a2.jpg" style="width:100%" >
+  <img class="mySlides" src="a3.jpg" style="width:100%" >
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+<div class="sapna" style="margin-top: 30px; text-align:Center;">
+ <h3 style="font-family: 'Conv_CaviarDreams'; text-transform: uppercase;">---------------Latest Collection---------------</h3>
+ </div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="p1.jpg" >
+<a  href="HINDU.html">
+      <img src="p1.jpg" alt="Trolltunga Norway" width="600" height="200">
+    </a></a>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="p2.jpg">
+<a href="Special.html">
+  <img src="p2.jpg" alt="Forest" width="600" height="400">
+    </a></a>
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="p3.jpg">
+<a href="Muslim.html">    
+      <img src="p3.jpg" alt="Northern Lights" width="600" height="400">
+    </a></a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="p6.jpg">
+ <a href="Designer.html">
+      <img src="p6.jpg" alt="Mountains" width="600" height="400">
+    </a></a>
+ 
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+
+
+
+
+
+</body>
+</html>

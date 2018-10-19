@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>My Example</title>
+
+<!-- CSS -->
+<style>
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 30em;
+padding: 20em;
+border: 2px solid #ccc;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+img.avatar {
+    width: 30%;
+    border-radius: 50%;
+}
+
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm fieldset {
+border: none;
+padding: 0;
+}
+
+.myForm legend,
+.myForm label {
+padding: 5px;
+font-weight: bold;
+}
+
+.myForm label.choice {
+font-size: 0.9em;
+font-weight: normal;
+}
+
+.myForm label {
+text-align: left;
+display: block;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="email"],
+.myForm input[type="datetime-local"],
+.myForm select,
+.myForm textarea {
+float: right;
+width: 60%;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm input[type="radio"],
+.myForm input[type="checkbox"] {
+margin-left: 40%;
+}
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #4CAF50;
+border: none;
+font-weight: bold;
+margin-left: 40%;
+margin-top: 1.8em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+<center><h2>Wedding Card Order</h2></center>
+
+<form action="/action_page.php">
+  <div class="imgcontainer">
+    <img src='B1.jpg' alt="Avatar" class="avatar">
+  </div>
+
+<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+<p>
+<label for="uname">First Name
+<input type="text" name=" placeholder="Enter First Name" name="uname" required>
+</label> 
+</p>
+
+<p>
+<label for="uname">Last Name
+<input type="text" name=" placeholder="Enter Last Name" name="uname" required>
+</label> 
+</p>
+
+<p>
+<label for="uname">Email Id
+<input type="text" name=" placeholder="Enter Email Id" name="uname" required>
+</label> 
+</p>
+
+
+<p>
+<label for="uname">Phone No
+<input type="text" name=" placeholder="Enter Phone No" name="uname" required>
+</label>
+</p>
+
+
+<p>
+<label for="uname">Card No
+<input type="text" name=" placeholder="Enter Card No" name="uname" required>
+</label>
+</p>
+
+<p>
+<label for="uname">Card Quantity
+<input type="text" name=" placeholder="Enter Card Quantity" name="uname" required>
+</label>
+</p>
+
+<p>
+<label for="uname">Delivery Date
+<input type="text" name=" placeholder="Enter Date for Delivery" name="uname" required>
+</label>
+</p>
+
+
+<p><button type="submit">Submit</button></p>
+
+</form>
+
+</body>
+</html>
